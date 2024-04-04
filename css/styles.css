@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;400;500&display=swap');
+
+:root {
+   --ff-primary: 'Sora', sans-serif;
+   
+   --fw-bold: 500;
+   --fw-semibold: 400;
+   --fw-regular: 300;
+
+   --fs-title: 1.125rem;
+   --fs-body: .875rem;
+   --fs-small: .75rem;
+   --fs-tag: .625rem;
+
+   --mg-small: .375rem;
+   --mg-big: 1.25rem;
+
+   --bbg-colour: #FAFAF9;
+   --dark-purple: #883AE1;
+   --light-purple: #E6D6FC;
+   --light-gray: #E5EAF0;
+   --gray: #6C727F;
+   --black: #000000;
+   --white: #ffffff;
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  line-height: 1.5;
+  font-size: var(--fs-body);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 1280px;
+    margin: 0 auto;
+    background: var(--bbg-colour);
+    color: var(--gray);
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-regular);
+    display: grid;
+    place-content: center;
+}
+
+.card {
+    max-width: 368px;
+    padding: 1rem 1rem 1.25rem 1rem;
+    border-radius: 1rem;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+}
+
+.card-img {
+    width: 336px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.tag {
+    font-size: var(--fs-tag);
+    font-weight: var(--fw-bold);
+    padding: 0.375rem 1rem;
+    border-radius: 1rem;
+    width: fit-content;
+    color: var(--dark-purple);
+    background-color: var(--light-purple);
+    margin-bottom: 1rem;
+}
+
+.card-title {
+    font-size: var(--fs-title);
+    color: var(--black);
+    margin-bottom: var(--mg-small);
+}
+
+.card-text {
+    font-weight: var(--fw-semibold);
+    margin-bottom: var(--mg-big);
+}
+
+hr {
+    border: none;
+    height: 1px;
+    width: 368px;
+    margin-left: -1rem;
+    background: var(--light-gray);
+    margin-bottom: var(--mg-big);
+}
+
+.card-author {
+    font-size: var(--fs-small);
+    font-weight: var(--fw-semibold);
+}
